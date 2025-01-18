@@ -1,0 +1,16 @@
+<div>
+      <h1>Create User</h1>
+      <button onClick={handleClick}>Go to another page</button>
+      <Route path="/login">
+        {<Login />}
+      </Route>
+    </div>
+
+
+    const history = useHistory();
+
+  function handleClick() {
+    history.push('/CreateUser');
+  }
+
+  import { useHistory, Route } from 'react-router-dom';
