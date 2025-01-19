@@ -44,5 +44,5 @@ body, html {
 
 .home-right {
     display: flex;
-    gap: 1.5 rem; 
+    gap: 8px; 
 }

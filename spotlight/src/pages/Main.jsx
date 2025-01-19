@@ -1,18 +1,21 @@
 import './Main.css';
 import Suggestions from '../components/Suggestions';
+import Drawer from '../components/Drawer';
 
 const Main = () => {
-
-	return (
-        <div className ="home-container">
-            <nav className ="home-nav">
-                <a href = "/" className ="home-link">SpotLight</a>
-                <div className ="home-right">
-                    <a href ="/login" className ="home-link">Log In</a>
-                    <a href ="/signup" className ="home-link">Sign Up</a>
+    
+    return (
+        <div className="home-container">
+            <nav className="home-nav">
+                <a>SpotLight</a>
+                <div className="home-right">
+                    <a>Sign Up</a>
+                    <a>Login</a>
                 </div>
             </nav>
-            <div className = "home-content">
+            <Drawer>
+            </Drawer>
+            <div className="home-content">
                 <Suggestions />
             </div>
         </div>
