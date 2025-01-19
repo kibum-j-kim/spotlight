@@ -2,6 +2,7 @@ import './Main.css';
 import Suggestions from '../components/Suggestions';
 import spotlightLogo from '../images/spotlightlogo.png';
 
+import Drawer from '../components/Drawer';
 
 const Main = () => {
 
@@ -18,7 +19,9 @@ const Main = () => {
                     <a href ="/signup" className ="home-button login">Sign Up</a>
                 </div>
             </nav>
-            <h1 className = "home-title">
+            <Drawer>
+            </Drawer>
+            <h1 className="home-title">
                 Find <span className = "highlight">Spotlights</span> near you
             </h1>
             <Suggestions />
