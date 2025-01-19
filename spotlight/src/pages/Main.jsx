@@ -4,6 +4,7 @@ import spotlightLogo from '../images/spotlightlogo.png';
 import SearchBar from '../components/SearchBar';
 
 import Drawer from '../components/Drawer';
+import LocationSearch from '../components/LocationSearch';
 
 const Main = () => {
 
@@ -26,19 +27,16 @@ const Main = () => {
                 Find <span className="highlight">Spotlights</span> near you
             </h1>
             <div className="map-background">
-                <div className="home-search">
-                    <input
-                        type="text"
-                        className="search-bar"
-                        placeholder="Enter destination address"
-                    />
+                <div className="top-search">
+                    <LocationSearch />
                 </div>
-                <div className="home-search">
+                <div className="bottom-search">
                     <SearchBar />
                 </div>
             </div>
-           
-            <Suggestions />
+            <div>
+                <Suggestions />
+            </div>
         </div>
     );
 };
