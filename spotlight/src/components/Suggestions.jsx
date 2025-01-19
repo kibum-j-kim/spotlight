@@ -1,3 +1,4 @@
+import SearchBar from "./SearchBar";
 import "./Suggestions.css";
 
 
@@ -19,33 +20,6 @@ const Suggestions = () => {
             <p>{category.label}</p>
           </div>
         ))}
-      </div>
-      <div className="spotlights-section">
-        <h2>Spotlights Near You</h2>
-        <div className="spotlights-grid">
-          {/* Add spotlight cards dynamically */}
-          <div className="spotlight-card">
-            <img src="/assets/nwhacks.png" alt="NwHacks" />
-            <p>NWHackathon</p>
-          </div>
-          <div className="spotlight-card">
-            <p>Telus</p>
-          </div>
-        </div>
-      </div>
-      <div className="spotlights-section">
-        <h2>Popular Spotlights</h2>
-        <div className="spotlights-grid">
-          {/* Add popular spotlight cards dynamically */}
-          <div className="spotlight-card">
-            <img src="/assets/trivianight.png" alt="TriviaNight"  />
-            <p>Moose Down Under's Trivia Night</p>
-          </div>
-          <div className="spotlight-card">
-            <img src="/assets/nwhacks.png" alt="Breka"  />
-            <p>Breka Bakery, New Cake Flavour</p>
-          </div>
-        </div>
       </div>
     </div>
   );

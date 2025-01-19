@@ -34,7 +34,7 @@
 .spotlight-card {
   flex: 0 0 200px;
   text-align: center;
-  background: white;
+  background: transparent;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

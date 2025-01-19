@@ -48,6 +48,10 @@ body, html {
     gap: 1.5rem; 
 }
 
+.home-search {
+    display: flex;
+}
+
 .home-logo img {
     max-width: 75px;
     height: auto;
@@ -71,3 +75,14 @@ body, html {
     color: black;
     font-size: 35px;
 }
+
+.search-bar {
+    width: 100%;
+    background-color: white;
+}
+  
+  .map-background {
+    background-image: url("/map.png");
+    background-size: 100%;
+    height: 100%;
+  }
