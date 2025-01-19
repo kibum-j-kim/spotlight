@@ -1,11 +1,11 @@
-**Inspiration
+**Inspiration**
 Spotlight was created out of a desire to strengthen local communities and help local businesses thrive. We noticed a gap in current digital apps for discovering local happenings—while social media platforms like Instagram and Eventbrite websites offer glimpses into events or promotions, they often lack a centralized, up-to-date source for ongoing events or hidden gems. Spotlight fills this gap by creating a dedicated platform where local vendors and businesses can sponsor events.
 
-**What it does
+**What it does**
 Spotlight provides a real-time, easy-to-navigate feed of current events, promotions, and exclusive deals from nearby businesses. The app fosters a stronger sense of community by helping users discover hidden gems and support local entrepreneurs, all while connecting them to what's happening in their neighborhood. It’s a one-stop platform to engage with your community and make the most of local experiences.
 
-**How we built it
+**How we built it**
 We built Spotlight using the React framework for a responsive, dynamic user interface utilizing CSS and Javascript styling. Our design process began with Figma, where we prototyped the app’s layout and user experience. On the back-end, we used Flask and SQLite database, ensuring smooth data management and seamless communication between the front-end and back-end. This combination of tools allowed us to build a fast, scalable, and user-friendly app.
 
-**Challenges we ran into
+**Challenges we ran into**
 Building Spotlight presented several challenges. We had to learn Python Flask for the back-end, which was a new framework for us, and ensure it integrated seamlessly with the front-end. Translating our Figma prototypes into complex UI components also proved tricky, requiring precise styling and functionality. Additionally, connecting the front-end to the back-end so data could be fetched and displayed properly in real-time was a key hurdle. From a design perspective, ensuring an accessible UI that allowed users to comfortably view and interact with the interface was a key objective. We went through iterative design changes, drawing inspiration from existing mobile apps such as UberEats, DoorDash, and Eventbrite. Additionally, we needed to account for the fact that this was a web mobile UI rather than a traditional application. This required not only the removal of commonly used components but also the creation of an interface that worked seamlessly for a web environment. Along the way, we also had to determine how to create realistic 2D mobile app designs, balancing both functionality and user accessibility.
