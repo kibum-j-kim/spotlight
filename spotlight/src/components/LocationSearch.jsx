@@ -23,7 +23,7 @@ const LocationSearch = ({ onSearch }) => {
         value={query}
         onChange={handleInputChange}
         placeholder="Enter destination address..."
-        style={{ flex: 1, padding: '10px', borderRadius: '50px', border: '1px solid #ccc', marginRight: '0 auto', backgroundColor: 'white', width: '100%', maxWidth: '400px' }}
+        style={{ flex: 1, padding: '10px', borderRadius: '50px', border: '1px solid #ccc', marginRight: '0 auto', backgroundColor: 'white', color: 'black', width: '100%', maxWidth: '400px' }}
       />
     </div>
   );
