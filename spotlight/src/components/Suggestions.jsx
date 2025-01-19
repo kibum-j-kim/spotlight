@@ -1,56 +1,49 @@
 import "./Suggestions.css";
 
-const suggestions = [
-  {
-    title: "Food Specials",
-    description: "Explore exclusive food offers near you.",
-    image: "path-to-food-specials-image", // Replace with image path
-  },
-  {
-    title: "Festivals",
-    description: "Find upcoming festivals and celebrations.",
-    image: "path-to-festivals-image", // Replace with image path
-  },
-  {
-    title: "Happy Hour",
-    description: "Discover happy hour deals in the city.",
-    image: "path-to-happy-hour-image", // Replace with image path
-  },
-  {
-    title: "Meal Deals",
-    description: "Affordable meals for everyone.",
-    image: "path-to-meal-deals-image", // Replace with image path
-  },
-  {
-    title: "Trivia Night",
-    description: "Challenge yourself at trivia nights.",
-    image: "path-to-trivia-night-image", // Replace with image path
-  },
-  {
-    title: "Community Market",
-    description: "Visit local community markets.",
-    image: "path-to-community-market-image", // Replace with image path
-  },
+const categories = [
+  { icon: "foodicon", label: "Food Specials" },
+  { icon: "glass", label: "Happy Hours" },
+  { icon: "ticket", label: "Meal Deals" },
+  { icon: "trivia", label: "Trivia Night" },
 ];
 
 const Suggestions = () => {
   return (
     <div className="suggestions-container">
-      <h2>Suggestions</h2>
-      <input
-        type="text"
-        className="search-bar"
-        placeholder="Search for something to do in the city..."
-      />
-      <div className="suggestions-grid">
-        {suggestions.map((item, index) => (
-          <div className="suggestion-card" key={index}>
-            <img src={item.image} alt={item.title} className="suggestion-image" />
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <button className="details-button">Details</button>
+      <div className="categories">
+        {categories.map((category, index) => (
+          <div className="category-item" key={index}>
+            <img src={`/src/images/${category.icon}.png`} alt={category.label} />
+            <p>{category.label}</p>
           </div>
         ))}
+      </div>
+      <div className="spotlights-section">
+        <h2>Spotlights Near You</h2>
+        <div className="spotlights-grid">
+          {/* Add spotlight cards dynamically */}
+          <div className="spotlight-card">
+            <img src="/assets/nwhacks.png" alt="NwHacks" />
+            <p>NwHackathon</p>
+          </div>
+          <div className="spotlight-card">
+            <p>Telus</p>
+          </div>
+        </div>
+      </div>
+      <div className="spotlights-section">
+        <h2>Popular Spotlights</h2>
+        <div className="spotlights-grid">
+          {/* Add popular spotlight cards dynamically */}
+          <div className="spotlight-card">
+            <img src="/assets/trivia-night.png" alt="Trivia Night" />
+            <p>Moose Down Under's Trivia Night</p>
+          </div>
+          <div className="spotlight-card">
+            <img src="/assets/bakery.png" alt="Bakery" />
+            <p>Breka Bakery, New Cake Flavour</p>
+          </div>
+        </div>
       </div>
     </div>
   );
