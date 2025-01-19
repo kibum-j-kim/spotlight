@@ -81,23 +81,3 @@ class EventSponsor(db.Model):
             "eventId": self.event_id,
             "sponsorId": self.sponsor_id
         }
-    
-class Comment(db.Model):
-    __tablename__ = 'comments'
-    id = db.Column(db.Integer, primary_key=True)
-    content = db.Column(db.Text, nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    event_id = db.Column(db.Integer, db.ForeignKey('events.id'), nullable=False)
-
-    user = db.relationship("User", backref=db.backref("comments", lazy=True))
-    event = db.relationship("Event", backref=db.backref("comments", lazy=True))
-
-    def to_json(self):
-        return {
-            "id": self.id,
-            "content": self.content,
-            "createdAt": self.created_at,
-            "userId": self.user_id,
-            "eventId": self.event_id
-        }
