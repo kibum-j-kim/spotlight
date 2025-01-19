@@ -10,6 +10,8 @@ const Main = () => {
 
     return (
         <div className="home-container">
+            <div style={{height: '50px', backgroundColor: 'white'}}>
+            </div>
             <nav className="home-nav">
                 <div className="home-logo">
                     <a href="/main">
