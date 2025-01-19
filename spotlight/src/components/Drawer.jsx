@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Drawer.css';
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
+import spotlightLogo from '../images/spotlightlogo.png';
 
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +54,7 @@ const SignUpButton = () => {
                         <p>About Us</p>
                     </div>
                     <div>
-                        <img src="spotlight\public\logo.png" alt="logo" />
+                        <img className="drawer-logo" src={spotlightLogo} alt = "Spotlight" />
                     </div>
       </div>
     </div>

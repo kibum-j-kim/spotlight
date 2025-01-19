@@ -56,3 +56,7 @@
     padding: 10px; /* Optional: Add padding for better appearance */
     text-align: center; /* Center the text inside the button */
 }
+
+.drawer-logo {
+    max-width: 150px;
+}

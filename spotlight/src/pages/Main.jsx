@@ -24,6 +24,13 @@ const Main = () => {
             <h1 className="home-title">
                 Find <span className = "highlight">Spotlights</span> near you
             </h1>
+            <div className = "home-search">
+                <input 
+                    type = "text"
+                    className = "search-bar"
+                    placeholder = "Enter destination address.."
+                />
+            </div>
             <Suggestions />
         </div>
     );

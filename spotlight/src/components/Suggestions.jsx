@@ -1,5 +1,7 @@
 import "./Suggestions.css";
 
+
+
 const categories = [
   { icon: "foodicon", label: "Food Specials" },
   { icon: "glass", label: "Happy Hours" },
@@ -24,7 +26,7 @@ const Suggestions = () => {
           {/* Add spotlight cards dynamically */}
           <div className="spotlight-card">
             <img src="/assets/nwhacks.png" alt="NwHacks" />
-            <p>NwHackathon</p>
+            <p>NWHackathon</p>
           </div>
           <div className="spotlight-card">
             <p>Telus</p>
@@ -36,11 +38,11 @@ const Suggestions = () => {
         <div className="spotlights-grid">
           {/* Add popular spotlight cards dynamically */}
           <div className="spotlight-card">
-            <img src="/assets/trivia-night.png" alt="Trivia Night" />
+            <img src="/assets/trivianight.png" alt="TriviaNight"  />
             <p>Moose Down Under's Trivia Night</p>
           </div>
           <div className="spotlight-card">
-            <img src="/assets/bakery.png" alt="Bakery" />
+            <img src="/assets/nwhacks.png" alt="Breka"  />
             <p>Breka Bakery, New Cake Flavour</p>
           </div>
         </div>
