@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: white;
+}
+
+.home-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+}
+
+.home-content {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.home-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home-logo img {
+    max-width: 75px;
+    height: auto;
+}
+
+.home-button.login {
+    background-color: #FF9F68;
+    border: 2px solid #FF9F68;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.highlight {
+    color: #FF7F35;
+    font-size: 40px;
+}
+
+.home-title {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+.search-bar {
+    width: 100%;
+    background-color: white;
+}
+
+.map-background {
+    position: relative;
+    background-image: url("/map.png");
+    background-size: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bottom-search {
+    position: absolute;
+    /* Position the bottom search bar absolutely */
+    bottom: 0;
+    /* Align it to the bottom of the container */
+    width: 100%;
+    /* Ensure it takes the full width of the container */
+    margin-bottom: 5px;
+}
+
+.top-search {
+    position: absolute;
+    /* Position the bottom search bar absolutely */
+    top: 0;
+    /* Align it to the bottom of the container */
+    width: 100%;
+    /* Ensure it takes the full width of the container */
+    margin-top: 5px;
+}
+
+::placeholder {
+    color: black;
+}

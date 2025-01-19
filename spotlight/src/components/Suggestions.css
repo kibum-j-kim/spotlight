@@ -1,0 +1,50 @@
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.spotlights-section {
+  padding: 1rem 2rem;
+}
+
+.spotlights-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.spotlights-grid {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.spotlight-card {
+  flex: 0 0 200px;
+  text-align: center;
+  background: transparent;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
