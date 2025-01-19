@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #120f0f;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,7 +9,7 @@ body {
     height: 100vh;
   }
   
-  .page-container {
+  .centered-page-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -19,12 +19,12 @@ body {
     text-align: center;
   }
   
-  .page-container h1 {
+  .centered-page-container h1 {
     color: #333;
     margin-bottom: 20px;
   }
   
-  .page-container p {
+  .centered-page-container p {
     color: #666;
     line-height: 1.5;
   }
