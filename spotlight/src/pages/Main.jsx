@@ -5,6 +5,7 @@ import SearchBar from '../components/SearchBar';
 
 import Drawer from '../components/Drawer';
 import LocationSearch from '../components/LocationSearch';
+import Categories from '../components/Categories';
 
 const Main = () => {
 
@@ -32,11 +33,17 @@ const Main = () => {
                 <div className="top-search">
                     <LocationSearch />
                 </div>
+                <div>
+                <Categories />
+                </div>
                 <div className="bottom-search">
                     <SearchBar />
                 </div>
             </div>
             <div>
+            <h2>
+                Popular Spotlights
+            </h2>
                 <Suggestions />
             </div>
         </div>
