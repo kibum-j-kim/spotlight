@@ -1,13 +1,20 @@
-import Carousal2 from "../components/Carousal2";
-import SearchBar from "../components/SearchBar";
+import './Main.css';
+import Suggestions from '../components/Suggestions';
 
 const Main = () => {
 
 	return (
-        <div style = {{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
-            <SearchBar />
-            <h1>Main Page Place Holder</h1>
-            <Carousal2 />
+        <div className ="home-container">
+            <nav className ="home-nav">
+                <a href = "/" className ="home-link">SpotLight</a>
+                <div className ="home-right">
+                    <a href ="/login" className ="home-link">Log In</a>
+                    <a href ="/signup" className ="home-link">Sign Up</a>
+                </div>
+            </nav>
+            <div className = "home-content">
+                <Suggestions />
+            </div>
         </div>
     );
 };
